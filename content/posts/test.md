@@ -1,3 +1,3 @@
 # testing
 
-trying out github webhooks
+trying out webhooks
