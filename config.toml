@@ -1,0 +1,7 @@
+baseurl = "https://textfile.io"
+languageCode = "en-us"
+title = "Textfile"
+theme = "etch"
+
+[frontmatter]
+lastmod = ["lastmod", ":fileModTime", ":default"]
