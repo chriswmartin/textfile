@@ -3,26 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.textfile.io/posts/test/</loc>
-    <lastmod>2020-06-05T13:34:19+00:00</lastmod>
+    <loc>https://textfile.io/posts/test/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.textfile.io/categories/</loc>
+    <loc>https://textfile.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://blog.textfile.io/posts/</loc>
-    <lastmod>2020-06-05T13:34:19+00:00</lastmod>
+    <loc>https://textfile.io/posts/</loc>
   </url>
   
   <url>
-    <loc>https://blog.textfile.io/tags/</loc>
+    <loc>https://textfile.io/tags/</loc>
   </url>
   
   <url>
-    <loc>https://blog.textfile.io/</loc>
-    <lastmod>2020-06-05T13:34:19+00:00</lastmod>
+    <loc>https://textfile.io/</loc>
   </url>
   
 </urlset>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Textfile</title>
-    <link>https://blog.textfile.io/tags/</link>
+    <link>https://textfile.io/tags/</link>
     <description>Recent content in Tags on Textfile</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://blog.textfile.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://textfile.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>test</title>
-      <link>https://blog.textfile.io/posts/test/</link>
-      <pubDate>Fri, 05 Jun 2020 13:34:19 +0000</pubDate>
+      <link>https://textfile.io/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       
-      <guid>https://blog.textfile.io/posts/test/</guid>
+      <guid>https://textfile.io/posts/test/</guid>
       <description>testing just trying something out</description>
     </item>
     
