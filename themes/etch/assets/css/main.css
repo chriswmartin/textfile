@@ -192,6 +192,11 @@ main#content img {
     margin: 0 auto;
 }
 
+main#content video {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 main#content code,
 main#content pre {
     font-family: 'Menlo', monospace;

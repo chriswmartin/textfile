@@ -1,7 +1,17 @@
 baseurl = "https://textfile.io"
+staticDir = ["static"]
 languageCode = "en-us"
 title = "Textfile"
 theme = "etch"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  dark = "off"
+  highlight = true
 
 [frontmatter]
 lastmod = ["lastmod", ":fileModTime", ":default"]
+
+
