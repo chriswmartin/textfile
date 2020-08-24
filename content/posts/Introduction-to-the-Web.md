@@ -35,12 +35,12 @@ To bring this all together: if, for example, you would like to create a website 
 Create a folder on your computer and name it `my-website`. Inside of this folder create a file named `index.html`.
 
 {{< rawhtml >}}
-<video muted playsinline controls src="/media/create-my-website-folder.mp4"></video>
+<video preload muted playsinline controls src="/media/create-my-website-folder.mp4"></video>
 {{< /rawhtml >}}
 
 
 {{< rawhtml >}}
-<video muted playsinline controls src="/media/create-index-html.mp4"></video>
+<video preload muted playsinline controls src="/media/create-index-html.mp4"></video>
 {{< / rawhtml >}}
 
 Your `index.html` file is the centerpiece of your website. It is where you link your `styles.css` and `script.js` files together with the main content of your website.
