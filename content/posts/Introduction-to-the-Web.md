@@ -49,7 +49,7 @@ The `index.html` file contains two main sections: the __head__ where we store me
 
 To get started open your blank `index.html` file and type the following.
 
-``` html
+{{< highlight HTML >}}
 <html>
   
   <head>
@@ -61,7 +61,7 @@ To get started open your blank `index.html` file and type the following.
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 You will notice that each tag (`<html>`) has a corresponding closing tag with a backslash at the beginning (`</html>`). This is important to remember as that is how your web browser will know where one tag ends and another starts.
 
@@ -73,7 +73,7 @@ If you save this file and drag it into your browser you will see a blank webpage
 
 Now lets add a couple more elements to our `index.html` file
 
-``` html
+{{< highlight HTML "hl_lines=4 8" >}}
 <html>
 
   <head>
@@ -85,7 +85,7 @@ Now lets add a couple more elements to our `index.html` file
   </body>
   
 </html>
-```
+{{< / highlight >}}
 
 You should notice that the text that you added to the body of your file showed up on the webpage! We put this text inside of `<h1>` tags. The `<h1>` tag is the largest of the heading tags but there are also `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` tags which all decrease in size as the numbers get larger. These tags should be used to create titles and other important text on your webpage. 
 
@@ -109,7 +109,7 @@ In your `my-website` folder create a new blank file named `styles.css` and open 
 
 To tweak the design of a specific element of your web page using CSS you can select it using the tag name without angle brackets ( `< >` ).
 
-``` CSS
+{{< highlight CSS >}}
 body {
   background-color: black;
   color: white; 
@@ -118,7 +118,7 @@ body {
 h1 {
   color: green;
 }
-```
+{{< / highlight >}}
 
 Here we are making the background color of the entire web page black, setting the default text color to white and setting the text color of `<h1>` tags to green. Feel free to experiment and change these colors to anything you like.
 
@@ -130,7 +130,7 @@ CSS has a bunch of built in properties aside from color and background-color tha
 
 Before we can see these colors on our web page we need to link this `styles.css` file to our `index.html` file from earlier by adding a new line telling the HTML file where it can find our CSS file. 
 
-```html
+{{< highlight HTML "hl_lines=4" >}}
 <html>
 
   <head>
@@ -143,7 +143,7 @@ Before we can see these colors on our web page we need to link this `styles.css`
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 Once you’ve added this new line save the file and refresh your web page in the browser. You should see that your website has updated to use your new color scheme!
 
@@ -163,7 +163,7 @@ At this point you have your own website that uses the `<h1>` HTML tag for a page
 
 Let's add two new lines to our HTML file. This time we’ll use the `<p>` (paragraph) tag. The paragraph tag is the standard tag for most text on a website. In general, all text other than titles and subtitles should be placed inside of a `<p>` tag.
 
-```html
+{{< highlight HTML "hl_lines=10-11" >}}
 <html>
 
   <head>
@@ -178,7 +178,7 @@ Let's add two new lines to our HTML file. This time we’ll use the `<p>` (parag
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 You will notice that we’ve added something else new to one of these paragraph tags - a __class__. All HTML elements can be given a class attribute. On its own a class won’t do anything special but it allows us to target a specific section of our web page in CSS so that we can style it differently than other elements that are using the same tag.
 
@@ -188,7 +188,7 @@ Save your `index.html` file and open up your `styles.css` file.
 
 To target a specific class in CSS write the class name with a period ( `.` ) in front of it. Then you can apply styles to it the same way you would for a tag.
 
-```css
+{{< highlight CSS "hl_lines=10-14" >}}
 body {
   background-color: black;
   color: white;
@@ -203,11 +203,11 @@ h1 {
   color: white;
   border: 1px solid yellow;
 }	
-```
+{{< / highlight >}}
 
 While we have the `styles.css` file open we can add a few more CSS attributes to make our page look a bit nicer.
 
-```css
+{{< highlight CSS "hl_lines=4-7 12 19-20" >}}
 body {
   background-color: black;
   color: white;
@@ -229,7 +229,7 @@ h1 {
   text-align: center;
   padding: 1%;
 }
-```
+{{< / highlight >}}
 
 The `margin` attributes add __space between__ HTML elements and the edges of the web page. Moving web page content away from the far edges of the screen typically makes your site easier to read. The `text-align` attribute can be set to either left, right, or center and this determines where __text is placed__ on the web page. Lastly, the `padding` attribute is very similar to margin except that this adds __space inside__ of an HTML element. In this case this makes the background section of our `warning` element larger.
 
@@ -247,7 +247,7 @@ The H in HTML stands for hypertext (dynamic, interactive text). This is one of t
 
 To add a link to our web page we can use the `<a>` tag. The `<a>` tag takes an `href` attribute where you can specify the URL (link) you would like to attach. Any text that you add before the closing `</a>` tag will turn into a hyperlinked text. Try adding this new line to your `index.html` file.
 
-```html
+{{< highlight HTML "hl_lines=11-12" >}}
 <html>
 
   <head>
@@ -263,7 +263,7 @@ To add a link to our web page we can use the `<a>` tag. The `<a>` tag takes an `
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 To add an image to your website first create a new folder named `images` inside of your `my-website` folder. Any image that you would like to add to your website should be downloaded and placed in this folder. Once you’ve found an image you like you can add it to your website using the `<img>` tag.
 
@@ -273,7 +273,7 @@ To add an image to your website first create a new folder named `images` inside 
 
 _Note: make sure your image’s filename doesn’t contain a space. If it does, web browsers will not be able to load your image correctly._
 
-```html
+{{< highlight HTML "hl_lines=13" >}}
 <html>
 
   <head>
@@ -290,13 +290,13 @@ _Note: make sure your image’s filename doesn’t contain a space. If it does, 
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 The `<img>` tag takes two attributes. The first is `src` which is the location of your image in relation to your `index.html` file. The second attribute is `alt` which is a description of your image that will be shown in the event your image can’t be loaded. The `alt` attribute also allows those that are blind or that have impaired vision to effectively navigate your website using a screen reader[^1]!
 
 To wrap things up let's add a new section to our `styles.css` file to resize and center our image on the page.
 
-```css
+{{< highlight CSS "hl_lines=15-19" >}}
 body {
   background-color: black;
   color: white;
@@ -324,7 +324,7 @@ img {
   text-align: center;
   padding: 1%;
 }
-```
+{{< / highlight >}}
 
 The `width` attribute allows us to resize the image to a specific percentage of our screen size. In this case we are resizing our image to fill up half of the screen. Displaying the image as a `block` element gives us the ability to align it horizontally. Finally, setting the image’s `margin` to `auto` will position the image in the center of the screen horizontally. 
 
@@ -350,7 +350,7 @@ To get started with P5.js we need to import the framework from our `index.html` 
 <video preload controls loop src="/media/add-script-js.mp4"></video>
 {{< / rawhtml >}}
 
-```html
+{{< highlight HTML "hl_lines=5-6" >}}
 <html>
 
   <head>
@@ -369,11 +369,11 @@ To get started with P5.js we need to import the framework from our `index.html` 
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 Additionally, let’s add a new section to our `styles.css` file to center our javascript canvas on the web page just like we did for our image.
 
-```css
+{{< highlight CSS "hl_lines=21-26" >}}
 body {
   background-color: black;
   color: white;
@@ -394,7 +394,6 @@ img {
   width: 50%;
 }
 
-
 canvas {
   display: block;
   margin: auto;
@@ -409,14 +408,14 @@ canvas {
   text-align: center;
   padding: 1%;
 }
-```
+{{< / highlight >}}
 
 Now that we have everything set up we can open our `script.js` file and get started.
 
 
 P5.js programs are primarily written inside of two important, built in functions. The `setup()` function is only run __once__ when the program first starts. The `draw()` function runs continuously in a __loop__ for the entire time the program is running. Open up your `script.js` file and add these two functions.
 
-```javascript
+{{< highlight javascript >}}
 function setup() {
 
 }
@@ -424,11 +423,11 @@ function setup() {
 function draw() {
 
 }	
-```
+{{< / highlight >}}
 
 The first thing we need to do is create a canvas that will store and display our project. This is done using the `createCanvas()` function which takes `width` and `height` arguments. For these arguments we can use a built in variable from the P5.js framework - `windowWidth` which is automatically set to the current width of your browser window. While we’re at it, let’s add a new function to resize our canvas whenever the browser window is resized.
 
-```javascript
+{{< highlight javascript "hl_lines=2 9-11" >}}
 function setup() {
   createcanvas(windowWidth/2, windowWidth/2);
 }
@@ -440,7 +439,7 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth/2, windowWidth/2);
 }
-```
+{{< / highlight >}}
 
 Now we have a Javascript canvas using P5.js that is automatically resized to a square that is half the width of our browser window and is automatically centered on our screen using CSS.
 
@@ -458,7 +457,7 @@ First, let's set the background color of our javascript canvas so that we can se
 
 Choose your favorite color and set the background to it.
 
-```javascript
+{{< highlight javascript "hl_lines=6 11" >}}
 function setup() {
   createCanvas(windowWidth/2, windowWidth/2);
 }
@@ -471,7 +470,7 @@ function windowResized() {
   resizeCanvas(windowWidth/2, windowWidth/2);
   background(238, 130, 238);
 }
-```
+{{< / highlight >}}
 
 We can use a few built in functions to draw shapes on the canvas. Two of the most useful shape functions are `rect()` and `ellipse()` which both take four arguments - `X position`, `Y position`, `width`, and `height`.
 Before we can use these functions it helps to understand the coordinates system of the canvas.
@@ -499,7 +498,7 @@ In P5.js, coordinate (0, 0) is the top left corner of the canvas and the bottom 
 
 In your `script.js` file add the following two lines to draw a rectangle and an ellipse on your screen.
 
-```javascript
+{{< highlight javascript "hl_lines=8-9" >}}
 function setup() {
   createCanvas(windowWidth/2, windowWidth/2);
 }
@@ -515,7 +514,7 @@ function windowResized() {
   resizeCanvas(windowWidth/2, windowWidth/2);
   background(238, 130, 238);
 }
-```
+{{< / highlight >}}
 
 You should see a square in the upper left of your canvas and a circle in the center of your canvas. You might also have noticed that when drawing the ellipse we used `width/2` and `height/2` for the X and Y position values. These variables are automatically set to the current width and height of your canvas and are updated when the browser window changes size. Try resizing your window and you’ll notice that the circle always stays in the center. Similarly, if you were to change the ellipse function to
 
@@ -527,7 +526,7 @@ The ellipse will stay the same size relative to the canvas whenever it is resize
 
 To change the fill and outline color of shapes we can use the functions `fill()` and `stroke()` which both take RGB color values.
 
-```javascript
+{{< highlight javascript "hl_lines=8-9 12-13" >}}
 function setup() {
   createCanvas(windowWidth/2, windowWidth/2);
 }
@@ -548,7 +547,7 @@ function windowResized() {
   resizeCanvas(windowWidth/2, windowWidth/2);
   background(238, 130, 238);
 }
-```
+{{< / highlight >}}
 
 What if we wanted to be able to interact with the shapes we drew? That is totally possible and it’s one of the things that makes P5.js exciting to use. Try changing your `ellipse()` line to
 
@@ -576,7 +575,7 @@ Congratulations, you’ve just made your own simple drawing program! This opens 
 
 To do this we are going to need to learn a little bit about __variables__, __arrays__, and __if statements__. Let’s make some changes to our `script.js` file.
 
-```javascript
+{{< highlight javascript "hl_lines=1-2 8-11 15-16 25-29" >}}
 let penColor;
 let allColors;
 
@@ -606,7 +605,7 @@ function keyPressed() {
     penColor = random(allColors);
   }
 }
-```
+{{< / highlight >}}
 
 On the first two lines, before our `setup()` function, we are defining some __global variables__ - `penColor` and `allColors`. Inside of our `setup()` function we assigned `penColor` to the initial color we want to draw with and we assigned `allColors` to an __array__ of all of the colors we want to randomly pick from later on. An array can be thought of as a __list of values or variables__. At the end of our script we added a new function that is called every time you press any key on your keyboard. Since we would only like to change the pen’s color when the spacebar key is pressed we need to use an __if statement__. `KeyCode 32` is the signal your computer sends to the web browser when you press the spacebar key on your keyboard[^3] so inside of the if statement we can check if the spacebar key is pressed and, if so, we’ll set the pen color to a random color chosen from our `allColors` array.
 
@@ -644,7 +643,7 @@ For example, if you have a variable `input` that has the value of __5__ `map(inp
 
 In a new `script.js` file we can try all of this out.
 
-```javascript
+{{< highlight javascript "hl_lines=6-17" >}}
 function setup() {
   createCanvas(windowWidth/2, windowWidth/2);
 }
@@ -668,7 +667,7 @@ function windowResized() {
   resizeCanvas(windowWidth/2, windowWidth/2);
   background(238, 130, 238);
 }
-```
+{{< / highlight >}}
 
 Once you refresh your page you should see an ellipse in the center of the canvas that constantly warps and changes shape. As you move your mouse around the canvas you should also see that the background color changes accordingly.
 
@@ -701,7 +700,7 @@ P5.js becomes even more powerful when you start exploring the vast world of java
 
 Before we can get started we need to import the library and a face tracking model in our `index.html` file.
 
-```html
+{{< highlight HTML "hl_lines=7-9" >}}
 <html>
 
   <head>
@@ -723,7 +722,7 @@ Before we can get started we need to import the library and a face tracking mode
   </body>
 
 </html>
-```
+{{< / highlight >}}
 
 Once the library and model are imported we can start building our program in the `script.js` file. Firstly, we need to define two global variables: one to define a `button` element that will active the webcam when it is clicked and a __boolean__ variable (a boolean is a variable type that can have the value of either `true` or `false`) named `videoStarted` which will keep track of whether or not our button was pressed. 
 
@@ -795,7 +794,6 @@ The `drawElements()` is where we will do most of our work. After checking that `
 
 ```javascript
 function drawElements() {
-
   if (positions.length > 0) {
     var eye1pos = createVector(positions[27][0], positions[27][1]);
     var eye2pos = createVector(positions[32][0], positions[32][1]);

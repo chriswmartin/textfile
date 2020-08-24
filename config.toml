@@ -11,11 +11,10 @@ pygmentsUseClasses = true
   [markup.highlight]
     codeFences = true
     guessSyntax = false
-    hl_Lines = ""
+    lineNos = false
     lineNoStart = 1
-    lineNos = true
     lineNumbersInTable = true
-    noClasses = true
+    noClasses = false
     style = "github"
     tabWidth = 2
 
