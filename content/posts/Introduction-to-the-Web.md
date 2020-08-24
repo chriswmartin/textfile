@@ -35,12 +35,12 @@ To bring this all together: if, for example, you would like to create a website 
 Create a folder on your computer and name it `my-website`. Inside of this folder create a file named `index.html`.
 
 {{< rawhtml >}}
-<video autoplay loop muted playsinline controls src="/media/create-my-website-folder.mp4"></video>
+<video muted playsinline controls src="/media/create-my-website-folder.mp4"></video>
 {{< /rawhtml >}}
 
 
 {{< rawhtml >}}
-<video autoplay loop muted playsinline controls src="/media/create-index-html.mp4"></video>
+<video muted playsinline controls src="/media/create-index-html.mp4"></video>
 {{< / rawhtml >}}
 
 Your `index.html` file is the centerpiece of your website. It is where you link your `styles.css` and `script.js` files together with the main content of your website.
@@ -68,7 +68,7 @@ You will notice that each tag (`<html>`) has a corresponding closing tag with a 
 If you save this file and drag it into your browser you will see a blank webpage. You can keep this page open and any changes you make to your `index.html` file will automatically appear as soon as you refresh the page.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/drag-index-to-browser.mp4"></video>
+<video muted playsinline controls src="/media/drag-index-to-browser.mp4"></video>
 {{< / rawhtml >}}
 
 Now lets add a couple more elements to our `index.html` file
@@ -104,7 +104,7 @@ Now that you have a simple website started lets add a `styles.css` file so that 
 In your `my-website` folder create a new blank file named `styles.css` and open it up in your text editor.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/create-styles-css.mp4"></video>
+<video muted playsinline controls src="/media/create-styles-css.mp4"></video>
 {{< / rawhtml >}}
 
 To tweak the design of a specific element of your web page using CSS you can select it using the tag name without angle brackets ( `< >` ).
@@ -148,7 +148,7 @@ Before we can see these colors on our web page we need to link this `styles.css`
 Once you’ve added this new line save the file and refresh your web page in the browser. You should see that your website has updated to use your new color scheme!
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/link-styles.mp4"></video>
+<video muted playsinline controls src="/media/link-styles.mp4"></video>
 {{< / rawhtml >}}
 
 ----
@@ -268,7 +268,7 @@ To add a link to our web page we can use the `<a>` tag. The `<a>` tag takes an `
 To add an image to your website first create a new folder named `images` inside of your `my-website` folder. Any image that you would like to add to your website should be downloaded and placed in this folder. Once you’ve found an image you like you can add it to your website using the `<img>` tag.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/create-images-folder.mp4"></video>
+<video muted playsinline controls src="/media/create-images-folder.mp4"></video>
 {{< / rawhtml >}}
 
 _Note: make sure your image’s filename doesn’t contain a space. If it does, web browsers will not be able to load your image correctly._
@@ -329,7 +329,7 @@ img {
 The `width` attribute allows us to resize the image to a specific percentage of our screen size. In this case we are resizing our image to fill up half of the screen. Displaying the image as a `block` element gives us the ability to align it horizontally. Finally, setting the image’s `margin` to `auto` will position the image in the center of the screen horizontally. 
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/add-image.mp4"></video>
+<video muted playsinline controls src="/media/add-image.mp4"></video>
 {{< / rawhtml >}}
 
 ----
@@ -347,7 +347,7 @@ To write Javascript for our website we will be using the P5.js framework. This a
 To get started with P5.js we need to import the framework from our `index.html` file just like we did with our CSS file. Create a new file named `script.js` in your `my-website` folder and then add these two new lines to the `head` of your HTML file.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/add-script-js.mp4"></video>
+<video muted playsinline controls src="/media/add-script-js.mp4"></video>
 {{< / rawhtml >}}
 
 {{< highlight HTML "hl_lines=5-6" >}}
@@ -558,7 +558,7 @@ ellipse(mouseX, mouseY, width/15, height/15);
 The ellipse should now follow your mouse as you move it around the canvas!
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/interactive.mp4"></video>
+<video muted playsinline controls src="/media/interactive.mp4"></video>
 {{< / rawhtml >}}
 
 ----
@@ -610,7 +610,7 @@ function keyPressed() {
 On the first two lines, before our `setup()` function, we are defining some __global variables__ - `penColor` and `allColors`. Inside of our `setup()` function we assigned `penColor` to the initial color we want to draw with and we assigned `allColors` to an __array__ of all of the colors we want to randomly pick from later on. An array can be thought of as a __list of values or variables__. At the end of our script we added a new function that is called every time you press any key on your keyboard. Since we would only like to change the pen’s color when the spacebar key is pressed we need to use an __if statement__. `KeyCode 32` is the signal your computer sends to the web browser when you press the spacebar key on your keyboard[^3] so inside of the if statement we can check if the spacebar key is pressed and, if so, we’ll set the pen color to a random color chosen from our `allColors` array.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/random-color.mp4"></video>
+<video muted playsinline controls src="/media/random-color.mp4"></video>
 {{< / rawhtml >}}
 
 
@@ -672,7 +672,7 @@ function windowResized() {
 Once you refresh your page you should see an ellipse in the center of the canvas that constantly warps and changes shape. As you move your mouse around the canvas you should also see that the background color changes accordingly.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/change-color.mp4"></video>
+<video muted playsinline controls src="/media/change-color.mp4"></video>
 {{< / rawhtml >}}
 
 To take this further you can even combine your shape-changing animation code with your mouse tracking code from earlier in order to have the ellipse both constantly animate while also changing shape based off of where your mouse is on the web page. If you want to try this out change your `myWidth` and `myHeight` variables to the following code.
@@ -687,7 +687,7 @@ let myHeight = 100+(sin(frameCount/15)*50)+
 You should also try changing the magic numbers[^4] in these lines. For example the number we are adding to the entire result (100 in this case), the number we are dividing `frameCount` by, and the number that we are multiplying the result of the `sin()` function by. I only chose these specific numbers because I think it makes the result look interesting but that is totally subjective! Making changes to these values will drastically change the animation in a way that might be even more interesting.
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/change-shape.mp4"></video>
+<video muted playsinline controls src="/media/change-shape.mp4"></video>
 {{< / rawhtml >}}
 
 ----
@@ -1000,7 +1000,7 @@ function windowResized() {
 
 
 {{< rawhtml >}}
-<video preload controls loop src="/media/face-tracking.mp4"></video>
+<video muted playsinline controls src="/media/face-tracking.mp4"></video>
 {{< / rawhtml >}}
 
 ----
