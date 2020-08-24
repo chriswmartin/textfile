@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'rss';
-  src: url('/fonts/rss.eot?23836550');
-  src: url('/fonts/rss.eot?23836550#iefix') format('embedded-opentype'),
-       url('/fonts/rss.woff2?23836550') format('woff2'),
-       url('/fonts/rss.woff?23836550') format('woff'),
-       url('/fonts/rss.ttf?23836550') format('truetype'),
-       url('/fonts/rss.svg?23836550#rss') format('svg');
+  src: url('/fonts/rss.eot');
+  src: url('/fonts/rss.eot') format('embedded-opentype'),
+       url('/fonts/rss.woff') format('woff2'),
+       url('/fonts/rss.woff') format('woff'),
+       url('/fonts/rss.ttf') format('truetype'),
+       url('/fonts/rss.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rss';
-    src: url('../font/rss.svg?23836550#rss') format('svg');
+    src: url('../font/rss.svg?97113168#rss') format('svg');
   }
 }
 */
@@ -56,3 +56,5 @@
 }
  
 .icon-rss:before { content: '\f09e'; } /* '' */
+.icon-toggle-off:before { content: '\f204'; } /* '' */
+.icon-toggle-on:before { content: '\f205'; } /* '' */

@@ -2,6 +2,8 @@
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav style="float: right;">
         <ul>
+          <button id="toggle-switch" class="switch" onclick="toggleDarkMode()"><i class="icon-toggle-on"></i></button>
+
             {{ with .OutputFormats.Get "rss" -}}
             {{ printf `<a class="icon-rss" href="%s">RSS</a>` .Permalink | safeHTML }}
             {{ end -}}

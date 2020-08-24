@@ -24,6 +24,7 @@
 
     {{ if .Site.Params.highlight -}}
         {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
+        {{ $resources = $resources | append (resources.Get "css/syntax-dark.css") -}}
     {{ end -}}
 
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
