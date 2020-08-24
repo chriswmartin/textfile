@@ -1,7 +1,10 @@
 <header id="banner">
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
-    <nav>
+    <nav style="float: right;">
         <ul>
+            {{ with .OutputFormats.Get "rss" -}}
+            {{ printf `<a class="icon-rss" href="%s">RSS</a>` .Permalink | safeHTML }}
+            {{ end -}}
             <!-- <li><a href="{{ .Site.BaseURL }}">posts</a></li> -->
             {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
             <li>

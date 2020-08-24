@@ -17,6 +17,10 @@ body {
     line-height: 1.6;
 }
 
+.highlight {
+  border: 1px solid black;
+}
+
 header#banner {
     margin: 25px 0;
 }

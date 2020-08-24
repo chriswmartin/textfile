@@ -627,7 +627,7 @@ In P5.js you have a lot of power and flexibility to program your own animations.
 Additionally, we can use the `mouseX` and `mouseY` variables with the `map()` function to change the background color of our canvas depending on where our mouse is positioned inside of the canvas. The `map()` function takes five arguments: an input variable, the current minimum and maximum value for the input, and a new minimum and maximum value that you would like to translate your variable to.
 
 ```
-  input var   input max   new max
+input var   input max   new max
           ^        ^      ^
           |        |      |
           |        |      |
