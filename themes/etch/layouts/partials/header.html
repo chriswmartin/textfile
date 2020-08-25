@@ -7,7 +7,6 @@
             {{ with .OutputFormats.Get "rss" -}}
             {{ printf `<a class="icon-rss" href="%s">RSS</a>` .Permalink | safeHTML }}
             {{ end -}}
-            <!-- <li><a href="{{ .Site.BaseURL }}">posts</a></li> -->
             {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
