@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PProMonoLiga';
+  src: url('/fonts/ppro.ttf') format('truetype');
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -212,11 +217,12 @@ main#content video {
 
 main#content code,
 main#content pre {
-    font-family: 'Menlo', monospace;
+    font-family: 'PProMonoLiga', 'Menlo', monospace;
 }
 
 main#content code {
-    font-size: 0.96em;
+    font-size: 1.0em;
+    /* font-size: 0.96em; */
     padding: 0 5px;
 }
 

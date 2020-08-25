@@ -575,7 +575,7 @@ Congratulations, you’ve just made your own simple drawing program! This opens 
 
 To do this we are going to need to learn a little bit about __variables__, __arrays__, and __if statements__. Let’s make some changes to our `script.js` file.
 
-{{< highlight javascript "hl_lines=1-2 8-11 15-16 25-29" >}}
+{{< highlight javascript "hl_lines=1-2 8-9 11 15-16 25-29" >}}
 let penColor;
 let allColors;
 

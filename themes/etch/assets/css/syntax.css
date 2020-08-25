@@ -6,8 +6,10 @@
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
 /* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
 /* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
-/* Keyword */ .chroma .k { color: #000000; font-weight: bold }
-/* KeywordConstant */ .chroma .kc { color: #000000; font-weight: bold }
+/* Keyword */ .chroma .k { color: #000000; }
+/* Keyword  .chroma .k { color: #000000; font-weight: bold } */
+/* KeywordConstant .chroma .kc { color: #000000; font-weight: bold } */
+/* KeywordConstant */ .chroma .kc { color: #000000; }
 /* KeywordDeclaration */ .chroma .kd { color: #000000; font-weight: bold }
 /* KeywordNamespace */ .chroma .kn { color: #000000; font-weight: bold }
 /* KeywordPseudo */ .chroma .kp { color: #000000; font-weight: bold }
