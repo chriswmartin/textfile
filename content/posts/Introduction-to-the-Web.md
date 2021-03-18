@@ -1,3 +1,9 @@
+---
+title: "Introduction to the Web"
+date: 2020-08-25T15:25:09-04:00
+draft: false
+---
+
 ![header image](/media/header.png)
 
 # Introduction to the Web
@@ -292,7 +298,7 @@ _Note: make sure your image’s filename doesn’t contain a space. If it does, 
 </html>
 {{< / highlight >}}
 
-The `<img>` tag takes two attributes. The first is `src` which is the location of your image in relation to your `index.html` file. The second attribute is `alt` which is a description of your image that will be shown in the event your image can’t be loaded. The `alt` attribute also allows those that are blind or that have impaired vision to effectively navigate your website using a screen reader[^1]!
+The `<img>` tag takes two attributes. The first is `src` which is the location of your image in relation to your `index.html` file. The second attribute is `alt` which is a description of your image that will be shown in the event your image can’t be loaded. The `alt` attribute also allows those that are blind or that have impaired vision to effectively navigate your website using a screen reader! {{<sidenote>}} As long as you follow all of the best practices when creating your website (like adding `alt` attributes to your images) [screen readers](https://en.wikipedia.org/wiki/Screen_reader) can even turn your website into braille! {{</sidenote>}}
 
 To wrap things up let's add a new section to our `styles.css` file to resize and center our image on the page.
 
@@ -1022,7 +1028,6 @@ Throughout course we covered the basics of building your own website from scratc
 
 ## Notes
 
-[^1]: As long as you follow all of the best practices when creating your website (like adding `alt` attributes to your images) [screen readers](https://en.wikipedia.org/wiki/Screen_reader) can even turn your website into braille!
 [^2]: Google has an interactive color picker that allows you to copy the RGB value of any color you choose. You can access it by googling "[Color Picker](https://www.google.com/search?q=color+picker)".
 [^3]: You can use [keycode.info](https://keycode.info) to check what value is sent for each key on your keyboard.
 [^4]: In general, it isn't a great idea to use plain numbers that aren't assigned variable names in your code because it makes your code more difficult to understand when it's read by others. You can learn more about "magic numbers" [here](https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants).
